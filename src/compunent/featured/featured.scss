@@ -1,6 +1,25 @@
 .featured{
     height: 90vh;
     position: relative;
+
+    .category{
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        align-items: center;
+
+        select{
+            cursor: pointer;
+            background-color: var(--main-color);
+            border: 1px solid white;
+            color: white;
+            margin-left: 20px;
+            padding: 5px;
+        }
+    }
     
     img{
         width: 100%;
@@ -10,14 +29,18 @@
     .info{
         width: 20%;
         position: absolute;
-        top: 90px;
-        left: 70px;
+        top: 300px;
+        left: 90px;
         bottom: 100px;
         color: wheat;
         display: flex;
         flex-direction: column;
         img{
-            width: 300px;
+            max-width: 235px;
+            max-height: 85px;
+            width: auto;
+            border: 0;
+            vertical-align: middle
             }
         .desc{
             margin: 20px 0px;
